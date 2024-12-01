@@ -1,6 +1,6 @@
 #include "Cards/Onigiri.h"
 
-Onigiri::Onigiri(Shape shape) : Card("Onigiri", sf::Color::White, 50, 70), shape(shape) {}
+Onigiri::Onigiri(Shape shape) : Card("Onigiri", sf::Color::Blue, 50, 70), shape(shape) {}
 
 int Onigiri::getPoints() const {
     // Points calculation logic for Onigiri

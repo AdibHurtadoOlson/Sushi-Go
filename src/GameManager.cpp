@@ -1,6 +1,6 @@
 #include "GameManager.h"
 
-GameManager::GameManager() : isPaused(false), pauseMenu(800, 600), roundTime(roundDuration), currentPlayerIndex(0), roundNumber(1), allPlayersPlayed(false) {
+GameManager::GameManager() : deck(DeckType::MyFirstMeal), isPaused(false), pauseMenu(800, 600), roundTime(roundDuration), currentPlayerIndex(0), roundNumber(1), allPlayersPlayed(false) {
     if (!font.loadFromFile("resources/fonts/arial_narrow_7.ttf")) {
         // Handle error
     }
@@ -52,11 +52,11 @@ void GameManager::draw(sf::RenderWindow &window) {
     if (isPaused) {
         pauseMenu.draw(window);
     } else {
-        float x = 200; // Center position for current cards
-        float y = 300;
+        float x = 50; // Starting x position for current cards
+        float y = window.getSize().y - 160; // Bottom position for current cards
         for (auto &player : players) {
             player.drawCurrentCards(window, x, y);
-            player.drawMainPlayedCards(window, 50, 200); // Above current cards for main played cards
+            player.drawMainPlayedCards(window, 50, window.getSize().y - 320); // Lower position for main played cards
             player.drawSidePlayedCards(window, 650, 50); // Right position for side played cards
         }
         window.draw(pauseButton);

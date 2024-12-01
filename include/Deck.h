@@ -31,16 +31,29 @@
 #include "Cards/Pudding.h"
 #include "Cards/Fruit.h"
 
+enum class DeckType {
+    MyFirstMeal,
+    SushiGo,
+    PartySampler,
+    MasterMenu,
+    PointsPlatter,
+    GutthroatCombo,
+    BigBanquet,
+    DinnerForTwo
+    // Add more custom deck types as needed
+};
+
 class Deck {
 public:
-    Deck();
+    Deck(DeckType type = DeckType::MyFirstMeal);
     void shuffle();
     std::shared_ptr<Card> drawCard();
     void draw(sf::RenderWindow &window);
 
 private:
     std::vector<std::shared_ptr<Card>> cards;
-    sf::Font font;
+    void createDeck(DeckType type);
+    void addCards(const std::string& cardName, int count);
 };
 
 #endif // DECK_H

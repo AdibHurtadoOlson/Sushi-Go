@@ -14,6 +14,7 @@ public:
     std::string getName() const; // Add this method
     virtual int getPoints() const = 0; // Pure virtual function for points calculation
     virtual Type getType() const = 0; // Pure virtual function for card type
+    void setPosition(float x, float y); // Add this method
 
 protected:
     std::string name;

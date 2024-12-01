@@ -1,6 +1,6 @@
 #include "Cards/Dumpling.h"
 
-Dumpling::Dumpling() : Card("Dumpling", sf::Color::White, 50, 70) {}
+Dumpling::Dumpling() : Card("Dumpling", sf::Color(173, 216, 230), 50, 70) {}
 
 int Dumpling::getPoints() const {
     // Points calculation logic for Dumpling

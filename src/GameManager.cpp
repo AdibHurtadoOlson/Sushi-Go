@@ -101,8 +101,12 @@ bool GameManager::isPauseClicked(sf::Vector2f mousePos) {
 void GameManager::update(float deltaTime) {
     if (!isPaused) {
         roundTime -= deltaTime;
-        if (roundTime <= 0) {
+        if (roundNumber == 1 && roundTime <= 0) {
+            roundTime = roundDuration;
+        } else if (roundTime <= 0) {
             startNewRound();
+        } else {
+
         }
         timerText.setString("Time: " + std::to_string(static_cast<int>(roundTime)));
     }
@@ -118,7 +122,7 @@ void GameManager::startNewRound() {
     if (players.size() == 1) {
         players[0].deselectCard();
         std::vector<std::shared_ptr<Card>> newHand;
-        for (int i = 0; i < 4; ++i) { // Generate a new hand with one less card
+        for (int i = 0; i + roundNumber - 1 < 5; ++i) { // Generate a new hand with one less card
             newHand.push_back(deck.drawCard());
         }
         players[0].setCurrentHand(newHand);

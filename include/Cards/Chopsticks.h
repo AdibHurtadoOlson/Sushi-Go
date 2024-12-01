@@ -7,6 +7,7 @@ class Chopsticks : public Card {
 public:
     Chopsticks();
     int getPoints() const override;
+    Type getType() const override;
 };
 
 #endif // CHOPSTICKS_H

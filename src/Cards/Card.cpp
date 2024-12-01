@@ -1,4 +1,4 @@
-#include "Card.h"
+#include "Cards/Card.h"
 
 Card::Card(const std::string &name, const sf::Color &color, float width, float height) : name(name) {
     shape.setSize(sf::Vector2f(width, height));

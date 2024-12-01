@@ -7,6 +7,7 @@ class TakeoutBox : public Card {
 public:
     TakeoutBox();
     int getPoints() const override;
+    Type getType() const override;
 };
 
 #endif // TAKEOUTBOX_H

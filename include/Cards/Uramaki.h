@@ -7,6 +7,7 @@ class Uramaki : public Card {
 public:
     Uramaki(int rollCount);
     int getPoints() const override;
+    Type getType() const override;
     int getRollCount() const;
 
 private:

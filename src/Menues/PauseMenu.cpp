@@ -1,4 +1,4 @@
-#include "PauseGameMenu.h"
+#include "Menues/PauseGameMenu.h"
 
 PauseGameMenu::PauseGameMenu(float width, float height) {
     if (!font.loadFromFile("resources/fonts/arial_narrow_7.ttf")) {

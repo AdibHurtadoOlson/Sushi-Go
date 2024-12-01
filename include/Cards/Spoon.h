@@ -7,6 +7,7 @@ class Spoon : public Card {
 public:
     Spoon();
     int getPoints() const override;
+    Type getType() const override;
 };
 
 #endif // SPOON_H

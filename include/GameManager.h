@@ -4,7 +4,7 @@
 #include <SFML/Graphics.hpp>
 #include <vector>
 #include "Deck.h"
-#include "PauseGameMenu.h"
+#include "Menues/PauseGameMenu.h"
 #include "Player.h"
 
 class GameManager {

@@ -7,6 +7,7 @@ class Fruit : public Card {
 public:
     Fruit();
     int getPoints() const override;
+    Type getType() const override;
 };
 
 #endif // FRUIT_H

@@ -7,6 +7,7 @@ class SpecialOrder : public Card {
 public:
     SpecialOrder();
     int getPoints() const override;
+    Type getType() const override;
 };
 
 #endif // SPECIALORDER_H

@@ -1,13 +1,13 @@
-#ifndef SASHIMI_H
-#define SASHIMI_H
+#ifndef MENU_H
+#define MENU_H
 
 #include "Card.h"
 
-class Sashimi : public Card {
+class Menu : public Card {
 public:
-    Sashimi();
+    Menu();
     int getPoints() const override;
     Type getType() const override;
 };
 
-#endif // SASHIMI_H
+#endif // MENU_H

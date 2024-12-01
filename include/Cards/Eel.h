@@ -7,6 +7,7 @@ class Eel : public Card {
 public:
     Eel();
     int getPoints() const override;
+    Type getType() const override;
 };
 
 #endif // EEL_H

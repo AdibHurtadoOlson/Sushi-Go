@@ -7,6 +7,7 @@ class MakiRoll : public Card {
 public:
     MakiRoll(int rollCount);
     int getPoints() const override;
+    Type getType() const override;
     int getRollCount() const;
 
 private:

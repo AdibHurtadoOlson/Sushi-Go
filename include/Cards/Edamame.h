@@ -7,6 +7,7 @@ class Edamame : public Card {
 public:
     Edamame();
     int getPoints() const override;
+    Type getType() const override;
 };
 
 #endif // EDAMAME_H

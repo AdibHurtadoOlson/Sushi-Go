@@ -7,6 +7,7 @@ class Tea : public Card {
 public:
     Tea();
     int getPoints() const override;
+    Type getType() const override;
 };
 
 #endif // TEA_H

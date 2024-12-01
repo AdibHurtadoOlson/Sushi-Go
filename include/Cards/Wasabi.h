@@ -7,6 +7,7 @@ class Wasabi : public Card {
 public:
     Wasabi();
     int getPoints() const override;
+    Type getType() const override;
 };
 
 #endif // WASABI_H

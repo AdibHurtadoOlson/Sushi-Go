@@ -7,6 +7,7 @@ class Pudding : public Card {
 public:
     Pudding();
     int getPoints() const override;
+    Type getType() const override;
 };
 
 #endif // PUDDING_H

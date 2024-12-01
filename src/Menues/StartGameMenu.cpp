@@ -1,4 +1,4 @@
-#include "StartGameMenu.h"
+#include "Menues/StartGameMenu.h"
 
 StartGameMenu::StartGameMenu(float width, float height) {
     if (!font.loadFromFile("resources/fonts/arial_narrow_7.ttf")) {

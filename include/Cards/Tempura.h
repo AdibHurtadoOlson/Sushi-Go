@@ -5,7 +5,9 @@
 
 class Tempura : public Card {
 public:
-    Tempura(float width, float height);
+    Tempura();
+    int getPoints() const override;
+    Type getType() const override;
 };
 
 #endif // TEMPURA_H

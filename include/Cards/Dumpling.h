@@ -5,7 +5,9 @@
 
 class Dumpling : public Card {
 public:
-    Dumpling(float width, float height);
+    Dumpling();
+    int getPoints() const override;
+    Type getType() const override;
 };
 
 #endif // DUMPLING_H

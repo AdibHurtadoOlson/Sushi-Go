@@ -1,4 +1,4 @@
-#include "SettingsMenu.h"
+#include "Menues/SettingsMenu.h"
 
 SettingsMenu::SettingsMenu(float width, float height) {
     if (!font.loadFromFile("resources/fonts/arial_narrow_7.ttf")) {

@@ -1,4 +1,4 @@
-#include "StartMenu.h"
+#include "Menues/StartMenu.h"
 
 StartMenu::StartMenu(float width, float height) {
     if (!font.loadFromFile("resources/fonts/arial_narrow_7.ttf")) {

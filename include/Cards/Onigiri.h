@@ -8,6 +8,7 @@ public:
     enum Shape { CIRCLE, TRIANGLE, SQUARE, RECTANGLE };
     Onigiri(Shape shape);
     int getPoints() const override;
+    Type getType() const override;
 
 private:
     Shape shape;

@@ -1,7 +1,7 @@
 #include <SFML/Graphics.hpp>
-#include "StartMenu.h"
-#include "SettingsMenu.h"
-#include "StartGameMenu.h"
+#include "Menues/StartMenu.h"
+#include "Menues/SettingsMenu.h"
+#include "Menues/StartGameMenu.h"
 #include "GameManager.h"
 
 enum class Screen { START_MENU, SETTINGS_MENU, START_GAME_MENU, GAME, PAUSE_MENU };

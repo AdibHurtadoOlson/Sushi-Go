@@ -3,7 +3,7 @@
 
 #include <vector>
 #include <memory>
-#include "Card.h"
+#include "Cards/Card.h"
 
 class Player {
 public:

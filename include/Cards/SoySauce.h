@@ -7,6 +7,7 @@ class SoySauce : public Card {
 public:
     SoySauce();
     int getPoints() const override;
+    Type getType() const override;
 };
 
 #endif // SOYSAUCE_H

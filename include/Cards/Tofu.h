@@ -7,6 +7,7 @@ class Tofu : public Card {
 public:
     Tofu();
     int getPoints() const override;
+    Type getType() const override;
 };
 
 #endif // TOFU_H
